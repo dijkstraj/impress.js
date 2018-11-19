@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>African healthcare, Cypress and me</title>
+  
+  <meta name="description" content="African healthcare, Cypress and me" />
+  <meta name="author" content="Jogchem Dijkstra" />
+  <link rel="stylesheet" href="../../extras/highlight/styles/github.css">
+  <link rel="stylesheet" href="../../extras/mermaid/mermaid.forest.css">
+  <link href="css/classic-slides.css" rel="stylesheet" />
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress" data-transition-duration="1000">
+
+    <div class="step slide title" data-x="-1000" data-y="-1500">
+        <h1>African healthcare,<br/>
+         Cypress and me</h1>
+        <h2>Jogchem Dijkstra</h2>
+        <h3>2018</h3>
+
+        <div class="notes">
+        Any element with the class="notes" will not be displayed. This can
+        be used for speaker notes. In fact, the impressConsole plugin will
+        show it in the speaker console!
+        </div>
+    </div>
+
+  <div id="toc" class="step slide" data-rel-x="1000" data-rel-y="0">
+    <h1>Table of Contents</h1>
+    <ul>
+      <li><a href="#step-1">Healthcare</a></li>
+      <li><a href="#step-2">Growth</a></li>
+      <li><a href="#step-3">Bottlenecks</a></li>
+      <li><a href="#step-4">Solutions</a></li>
+      <li><a href="#step-5">Future steps</a></li>
+      <li><a href="#step-6">Demo</a></li>
+    </ul>
+
+    <div class="notes">
+    </div>
+  </div>
+
+  <div id="netherlands" class="step" data-rotate-y="30" data-rel-x="0" data-rel-y="2000">
+    <center>
+      <h1 class="substep">&euro; 5,700</h1>
+    </center>
+    <a href="https://www.cbs.nl/nl-nl/nieuws/2018/22/zorguitgaven-stijgen-in-2017-met-2-1-procent" class="source">CBS/2018</a>
+  </div>
+
+  <div id="kenya" class="step" data-rotate-y="210" data-rel-x="0" data-rel-y="0">
+    <center>
+      <h1 class="substep">620 000</h1>
+    </center>
+    <a href="https://equityhealthj.biomedcentral.com/articles/10.1186/s12939-017-0526-x" class="source">Barasa,Maina,Ravishankar/2017</a>
+
+    <div class="notes">
+    </div>
+  </div>
+
+  <div class="step" data-rel-x="11000" data-rel-y="3000" data-rotate="0">
+    <center>
+      <h1>☑️ &rarr; 💵</h1>
+      <hr/>
+      <h1>💵 &rarr; ☑️</h1>
+    </center>
+
+    <div class="notes">
+    </div>
+  </div>
+
+  <div id="mpesa" class="step" data-rel-x="800" data-rel-y="800">
+    <center>
+      <h1>M-Pesa</h1>
+      <h1>📱 &rarr;💸&rarr; 📱</h1>
+    </center>
+
+    <div class="notes">
+    </div>
+  </div>
+
+  <div id="carepay" class="step" data-rel-x="300" data-rel-y="1100">
+    <center>
+    <h1>PharmAccess</h1>
+    <p>&darr;</p>
+    <h1>M-Tiba</h1>
+    <p>&darr;</p>
+    <h1>CarePay</h1>
+    </center>
+
+    <div class="notes">
+    </div>
+  </div>
+
+  <div id="nhif" class="step" data-rel-x="-300" data-rel-y="1100">
+    <center>
+      <img src="images/NHIF_Maasai_1220X384_Revised.jpg" style="width: 900px"/>
+    </center>
+    
+    <div class="notes">
+    </div>
+  </div>
+
+  <div class="step" data-rel-x="-300" data-rel-y="800">
+    <center>
+      <p><img src="images/Flag_of_Tanzania.svg"/></p>
+      <p><img src="images/Flag_of_Nigeria.svg"/></p>
+    </center>
+    
+    <div class="notes">
+    </div>
+  </div>
+
+  <div class="step" data-rel-x="-800" data-rel-y="800">
+    <center>
+      <img src="images/database.png" style="width: 94px"/>
+      <img src="images/database.png" style="width: 94px"/>
+      <img src="images/database.png" style="width: 94px"/>
+      <img src="images/database.png" style="width: 94px"/>
+      <img src="images/database.png" style="width: 94px"/>
+      <img src="images/database.png" style="width: 94px"/>
+      <br/>
+      <img src="images/backend.png" style="width: 94px"/>
+      <img src="images/backend.png" style="width: 94px"/>
+      <img src="images/backend.png" style="width: 94px"/>
+      <img src="images/backend.png" style="width: 94px"/>
+      <img src="images/backend.png" style="width: 94px"/>
+      <img src="images/backend.png" style="width: 94px"/>
+      <br/>
+      <img src="images/frontend.png" style="width: 94px"/>
+      <img src="images/frontend.png" style="width: 94px"/>
+      <img src="images/frontend.png" style="width: 94px"/>
+    </center>
+    <div class="substep" style="font-size:2em;color:red;position:absolute;top:210px;left:260px;transform:rotate(-110deg);">&rarr;</div>
+    <div class="substep" style="font-size:2em;color:red;position:absolute;top:60px;left:220px;transform:rotate(-90deg);">&rarr;</div>
+    <div class="substep" style="font-size:2em;color:red;position:absolute;top:120px;left:290px;transform:rotate(0deg);">&rarr;</div>
+    <div class="substep" style="font-size:2em;color:red;position:absolute;top:110px;left:396px;transform:rotate(0deg);">&rarr;</div>
+    <div class="substep">
+      <div style="font-size:2em;color:red;position:absolute;top:200px;left:315px;transform:rotate(-70deg);">&rarr;</div>
+    </div>
+
+    <div class="notes">
+    </div>
+  </div>
+
+  <div id="bottleneck1" class="step">
+    <h3 style="margin-bottom: 0;">Bottleneck 1</h3>
+    <h1 style="margin-top: -40px;">Knowledge</h1>
+    <p>
+      <img src="images/slack_limit.png" style="width: 100%;"/>
+    </p>
+
+    <div class="notes">
+    </div>
+  </div>
+
+  <div id="bottleneck2" class="step">
+    <h3 style="margin-bottom: 0;">Bottleneck 2</h3>
+    <h1 style="margin-top: -40px;">Quality</h1>
+    <p>
+      <img src="images/sonarcloud.png" style="width: 100%;"/>
+    </p>
+
+    <div class="notes">
+    </div>
+  </div>
+
+  <div id="bottleneck3" class="step">
+    <h3 style="margin-bottom: 0;">Bottleneck 3</h3>
+    <h1 style="margin-top: -40px;">Testing</h1>
+    <p>
+      <img src="images/corrello.png" style="width: 100%;"/>
+    </p>
+
+    <div class="notes">
+    </div>
+  </div>
+  <div id="overview" class="step" style="pointer-events: none;">
+    <h1>Demo</h1>
+  </div>
+</div>
+
+<!--
+    Add navigation-ui controls: back, forward and a select list.
+    Add a progress indicator bar (current step / all steps)
+    Add the help popup plugin
+-->
+<div id="impress-toolbar"></div>
+
+<div class="impress-progressbar"><div></div></div>
+<div class="impress-progress"></div>
+
+<div id="impress-help"></div>
+
+<!-- Extra modules
+     Load highlight.js, mermaid.js, markdown.js and MathJax.js from extras.
+     If you're curious about details, these are initialized in src/plugins/extras/extras.js -->
+<script type="text/javascript" src="../../extras/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="../../extras/mermaid/mermaid.min.js"></script>
+<script type="text/javascript" src="../../extras/markdown/markdown.js"></script>
+<script type="text/javascript" src="../../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!--
+    To make all described above really work, you need to include impress.js in the page.
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. 
+-->
+<script type="text/javascript" src="../../js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
